@@ -11,3 +11,39 @@ public String Index()
 - Aynı şekilde List mehodunu yazıyoruz.
 public String List()
 {return "Course/List"};
+-HomeController dosyası içerisnde yer alan tüm methodları yorum satırı haline getiriyoruz.
+-Bu methodların yerine aşağıdaki methodları yazıyoruz.
+public String index()
+{return "home/index";}
+
+public String Contact()
+{return "home/contact";}
+
+Ders2/12:
+-View klasörü içerisinde yer alan -ViewStart.cshtml sayfasındaki Layout = "_Layout"; ifadesini şimdilik herhangi bir şablon kullanmayacağımız için Layout = null; olacak şekilde değiştiriyoruz.
+-Controller klasörü içerisinde yer alan CourseController clasının içerisinde yer alan Index methodunu aşağıdaki şekilde değiştiriyoruz.
+public IActionResult Index()
+{return View();}
+Böylece View\Course klasörü altındaki Index sayfasına yönlendirmiş olduk.
+-View klasörü altında Course adında bir klasör oluşturuyoruz. Bu klasörün üzerinde sağ tıklıyoruz. Açılan menüden add/New Item/Razor Page 'i tıklıyoruz. Ve Index.cshtml adında bir dosya oluşturuyoruz.
+-Dosya içerisine <!DOCTYPE html> yazıp enter tuşuna basıyouruz. <h1></h1> etiketi ile "Course Index Page" yazdırıyoruz.
+-Controller klasörü içerisinde yer alan CourseController clasının içerisinde yer alan List methodunu aşağıdaki şekilde değiştiriyoruz.
+public IActionResult List()
+{return View();}
+-View klasörü altında Course klasörünün üzerinde sağ tıklıyoruz. Açılan menüden add/New Item/Razor Page 'i tıklıyoruz. Ve List.cshtml adında bir dosya oluşturuyoruz.
+-Dosya içerisine <!DOCTYPE html> yazıp enter tuşuna basıyouruz. <h1></h1> etiketi ile "Course List Page" yazdırıyoruz.
+-
+-Controller klasörü içerisinde yer alan HomeController clasının içerisinde yer alan Index methodunu aşağıdaki şekilde değiştiriyoruz.
+public IActionResult Index()
+{return View();}
+Böylece View\Home klasörü altındaki Index sayfasına yönlendirmiş olduk.
+-View klasörünün altında Home klasörünün üzerinde sağ tıklıyoruz. Açılan menüden add/New Item/Razor Page 'i tıklıyoruz. Ve Index.cshtml adında bir dosya oluşturuyoruz.
+-Dosya içerisine <!DOCTYPE html> yazıp enter tuşuna basıyouruz. <h1></h1> etiketi ile "Home Index Page" yazdırıyoruz.
+-Controller klasörü içerisinde yer alan HomeController clasının içerisinde yer alan Contact methodunu aşağıdaki şekilde değiştiriyoruz.
+public IActionResult Contact()
+{return View();}
+-View klasörü altında Home klasörünün üzerinde sağ tıklıyoruz. Açılan menüden add/New Item/Razor Page 'i tıklıyoruz. Ve Contact.cshtml adında bir dosya oluşturuyoruz.
+-Dosya içerisine <!DOCTYPE html> yazıp enter tuşuna basıyouruz. <h1></h1> etiketi ile "Home Contact Page" yazdırıyoruz.
+-
+
+
