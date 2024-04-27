@@ -1,0 +1,13 @@
+Ders 1/6: Visual Studio üzerinde "Create New Project" butonunu tıklıyoruz.  
+Arama penceresine "asp.net" yazarak arama yapıyoruz. Gelen listeden "ASP.NET Core Web App (Model-View-Controller)" 'u seçip, Next butonuna basıyoruz.
+Proje adını yazıyoruz. Projenin oluşturulacağı lokasyonu belirliyoruz. Proje adı ile Solution adının aynı olmasını istiyoruz.
+Framework olarak son sürümü seçeceğiz. Authentication type "None" olarak seçilmeli ve Configure for MTTPS seçilmemiş olmasına dikkat ediyoruz.
+
+Ders 2/11: 
+-Controller klasörü içerisine girip sağ tıklatıyoruz. CourseIndex adında bir class oluşturuyoruz. Ve bu sınıfı 'Controller' sınıfından türetiyoruz.
+- Sınıfın içerisine aşağıdaki şekilde Index methodunu yazıyoruz.
+public String Index()
+{return "Course/Index"};
+- Aynı şekilde List mehodunu yazıyoruz.
+public String List()
+{return "Course/List"};
